@@ -1,0 +1,70 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+#survey-container {
+    display: block;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 20px;
+}
+
+#item-list, #categories-container {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+#items, .category {
+    min-height: 100px;
+    background-color: white;
+    /* Add a border, padding, and margin to create a card-like appearance */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+#categories {
+    /* Add this to align categories horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.category {
+    /* Add this to give each category a flexible width */
+    flex: 1 0 21%; /* grow | shrink | basis */
+    /* Add a border, padding, and margin to create a card-like appearance */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.item {
+    background-color: #e0e0e0;
+    cursor: pointer;
+    /* Add a border, padding, and margin to create a card-like appearance */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block; /* Add this line */
+    white-space: nowrap; /* Add this line */
+}
+.sortable-area {
+    min-height: 100px; /* Add this line */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
